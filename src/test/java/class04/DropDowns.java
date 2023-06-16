@@ -17,7 +17,7 @@ public class DropDowns extends CommonMethod {
 
         Thread.sleep(2000);
 
-        //  1.   find the element associate with the dropdown
+        //  1. find the element associate with the dropdown
         WebElement days = driver.findElement(By.xpath("//select[@id='day']"));
 
         //  2.create an object of the select class and pass in the parameters the element dropdown
