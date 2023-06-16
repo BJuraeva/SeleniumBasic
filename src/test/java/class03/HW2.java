@@ -15,9 +15,11 @@ Verify error message with text “Password cannot be empty” is displayed.
      */
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver= new ChromeDriver();
-//        driver.get to navigate to the website
+
+        // driver.get to navigate to the website
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login%E2%80%9D");
-//        maximize the screen
+
+        // maximize the screen
         driver.manage().window().maximize();
 
         Thread.sleep(2000);
@@ -34,8 +36,6 @@ Verify error message with text “Password cannot be empty” is displayed.
         Thread.sleep(2000);
 
         driver.quit();
-
-
 
     }
 }
