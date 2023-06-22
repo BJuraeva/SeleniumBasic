@@ -20,6 +20,7 @@ public class LaunchingBrowser {
 
 // get current URL
         String currentUrl=driver.getCurrentUrl();
+
 // print on the console
         System.out.println("The current url of the website is: "+currentUrl);
 
@@ -28,6 +29,7 @@ public class LaunchingBrowser {
 
 // get the title of the page
         String title = driver.getTitle();
+
 // print on the console
         System.out.println("The tittle of the webpage is: "+title);
 

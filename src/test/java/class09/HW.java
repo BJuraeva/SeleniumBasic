@@ -8,7 +8,7 @@ import static Utils.CommonMethod.openBrowserLaunchApplication;
 public class HW {
     /*
    1. create the method in Common methods for screen shot
-    it should take tle name as a parameter
+    it should take the name as a parameter
     ====================================================
     options = Options()
     Disable cookies

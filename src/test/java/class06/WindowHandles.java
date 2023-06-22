@@ -10,7 +10,6 @@ public class WindowHandles extends CommonMethod {
     public static void main(String[] args) throws InterruptedException {
         String url = "http://accounts.google.com/signup";
         String browser = "chrome";
-
         openBrowserLaunchApplication(url, browser);
 
         // click on the help and privacy button
