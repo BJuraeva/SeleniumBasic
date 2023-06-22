@@ -1,11 +1,13 @@
 package class09;
 
 
+import Utils.CommonMethod;
+
 import java.io.IOException;
 
 import static Utils.CommonMethod.openBrowserLaunchApplication;
 
-public class HW {
+public class HW extends CommonMethod {
     /*
    1. create the method in Common methods for screen shot
     it should take the name as a parameter
@@ -18,9 +20,16 @@ public class HW {
      driver = webdriver.Chrome(options=options)
      */
 
-    public static void main(String[] args) throws IOException {
-        String url = "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login";
+    public static void main(String[] args) throws IOException, InterruptedException {
+        String url = "http://practice.syntaxtechs.net/basic-radiobutton-demo.php";
         String browser = "chrome";
         openBrowserLaunchApplication(url, browser);
+        Thread.sleep(2000);
+        takeScreenShot("practice");
+        Thread.sleep(2000);
+        driver.quit();
+
+
+
     }
 }

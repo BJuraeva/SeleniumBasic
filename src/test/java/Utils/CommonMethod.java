@@ -53,7 +53,7 @@ public class CommonMethod {
     public  static void takeScreenShot(String fileName) throws IOException {
         TakesScreenshot ts = (TakesScreenshot)driver;
         File ss = ts.getScreenshotAs(OutputType.FILE);
-        String path = "C:\\Users\\16465\\IdeaProjects\\SeleniumBasic\\screenshot.testSyntax.png";
+        String path = "C:/Users/16465/IdeaProjects/SeleniumBasic/screenshot/"+ fileName + ".png";
         try {
             FileUtils.copyFile(ss, new File(path));
         } catch (IOException e) {
